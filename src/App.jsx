@@ -9,7 +9,8 @@ function App() {
   const formProps = { name, setName, age, setAge };
   return (
     <>
-      <Header heading="Student Manager" />
+      <Header heading={import.meta.env.VITE_GLOBAL_HEADING} />
+      <h2>{import.meta.env.VITE_APP_ENVIRONMENT}</h2>
       <Form
         students={students}
         setStudents={handleSetStudents}

@@ -1,4 +1,6 @@
-const baseUrl = "http://localhost:6715/students";
+const baseUrl = `https://json-server-deploy-j9se.onrender.com/${
+  import.meta.env.VITE_API_URL_PATH
+}`;
 
 const getStudents = () => {
   return fetch(baseUrl, { method: "GET" }).then((response) => {
