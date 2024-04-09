@@ -9,7 +9,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "npm run lint -- --fix",
     "preview": "vite preview",
-    "server": "json-server -p3001 --watch src/data/students.json"
+    "server": "json-server -p6715 --watch src/data/students.json"
   },
   "dependencies": {
     "json-server": "^1.0.0-alpha.23",

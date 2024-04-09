@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:3001/students";
+const baseUrl = "http://localhost:6715/students";
 
 const getStudents = () => {
   return fetch(baseUrl, { method: "GET" }).then((response) => {
