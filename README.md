@@ -6,7 +6,7 @@ The React Student Manager App is a simple application developed using React and 
 
 The main skills assessed in this project include:
 
-- Utilizing Fetch API methods for CRUD operations with API data.
+- Utilizing Fetch API methods for CRUD operations with API data, including the use of environment variables for the API URL path.
 - Manipulating data in JSON format.
 - Applying Clean Code and SOLID principles to ensure maintainability and readability.
 - Utilizing React Hooks to manage component lifecycles efficiently.
@@ -18,6 +18,7 @@ The main skills assessed in this project include:
 - [Clean Code](https://blog.risingstack.com/javascript-clean-coding-best-practices-node-js-at-scale/): Best practices for writing clean and maintainable code.
 - [SOLID Principles](https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa): Principles of object-oriented design for writing scalable and robust code.
 - [React Hooks](https://legacy.reactjs.org/docs/hooks-intro.html): Introduction to React Hooks for managing state and side effects.
+- [Env Variables](https://vitejs.dev/guide/env-and-mode): Vite documentation on environment variables and modes.
 
 ## Installation
 
@@ -26,10 +27,8 @@ To run the React Student Manager App locally, follow these steps:
 1. Clone the repository.
 2. Navigate to the project directory.
 3. Install dependencies using `npm install`.
-4. Start the JSON server using `npm run server`.
-5. Start the development server using `npm run dev`.
+4. Start the development server using `npm run dev`.
 
 ## Usage
 
 After installing the app, you can access it in your web browser and perform various actions such as adding, editing, and deleting student records.
-
