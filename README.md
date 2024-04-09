@@ -26,7 +26,8 @@ To run the React Student Manager App locally, follow these steps:
 1. Clone the repository.
 2. Navigate to the project directory.
 3. Install dependencies using `npm install`.
-4. Start the development server using `npm run dev`.
+4. Start the JSON server using `npm run server`.
+5. Start the development server using `npm run dev`.
 
 ## Usage
 
