@@ -9,7 +9,7 @@ export const handleCreateStudent = (formProps, setStudents) => {
 
   studentServices
     .createStudent(newStudent)
-    .then(
+    .then(() =>
       studentServices
         .getStudents()
         .then((students) => setStudents([...students]))
