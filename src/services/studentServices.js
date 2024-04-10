@@ -9,12 +9,17 @@ const getStudents = () => {
 };
 
 const createStudent = (newStudent) => {
-  return fetch(baseUrl, { method: "POST", body: JSON.stringify(newStudent) });
+  return fetch(baseUrl, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(newStudent),
+  });
 };
 
 const updateStudent = (updatingStudent) => {
   return fetch(`${baseUrl}/${updatingStudent.id}`, {
     method: "PUT",
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify(updatingStudent),
   });
 };
