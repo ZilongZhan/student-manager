@@ -15,9 +15,6 @@ export const handleUpdateStudent = (students, formProps, setStudents) => {
 
   studentServices
     .updateStudent(updatingStudent)
-    .then(() =>
-      studentServices
-        .getStudents()
-        .then((students) => setStudents([...students]))
-    );
+    .then(() => studentServices.getStudents())
+    .then((students) => setStudents([...students]));
 };
