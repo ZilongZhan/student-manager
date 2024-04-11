@@ -1,15 +1,17 @@
-const baseUrl = `https://json-server-deploy-j9se.onrender.com/${
-  import.meta.env.VITE_API_URL_PATH
-}`;
+const API_URL_PATH = "students";
+
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+const URL_TO_FETCH = `${BASE_URL}/${API_URL_PATH}`;
 
 const getStudents = () => {
-  return fetch(baseUrl, { method: "GET" }).then((response) => {
+  return fetch(URL_TO_FETCH, { method: "GET" }).then((response) => {
     return response.json();
   });
 };
 
 const createStudent = (newStudent) => {
-  return fetch(baseUrl, {
+  return fetch(URL_TO_FETCH, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(newStudent),
@@ -17,7 +19,7 @@ const createStudent = (newStudent) => {
 };
 
 const updateStudent = (updatingStudent) => {
-  return fetch(`${baseUrl}/${updatingStudent.id}`, {
+  return fetch(`${URL_TO_FETCH}/${updatingStudent.id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(updatingStudent),
@@ -25,7 +27,7 @@ const updateStudent = (updatingStudent) => {
 };
 
 const deleteStudent = (id) => {
-  return fetch(`${baseUrl}/${id}`, { method: "DELETE" });
+  return fetch(`${URL_TO_FETCH}/${id}`, { method: "DELETE" });
 };
 
 export const studentServices = {
