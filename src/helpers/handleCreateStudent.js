@@ -9,9 +9,6 @@ export const handleCreateStudent = (formProps, setStudents) => {
 
   studentServices
     .createStudent(newStudent)
-    .then(() =>
-      studentServices
-        .getStudents()
-        .then((students) => setStudents([...students]))
-    );
+    .then(() => studentServices.getStudents())
+    .then((students) => setStudents([...students]));
 };
